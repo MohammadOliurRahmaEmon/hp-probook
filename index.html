@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/1024px-HP_logo_2012.svg.png" type="image/x-icon">
+    <title>HP-PROBOOK</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- Head Title -->
+        <h1 class="text-center mt-8 text-7xl">HP- <span class="text-blue-400">PROBOOK </span></h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-1 md:grid md:grid-cols-2 ">
+                <!-- Display Laptop Image div -->
+                <div class="w-3/4 mx-auto mt-16">
+                    <img class="" src="./images/hp.png" alt="HP-Probook-image">
+                </div>
+
+                <div class="w-5/6 bg-gray-100 p-2 mt-16 mx-auto">
+                    <!-- Description div  -->
+                    <div>
+                        <h1 class="text-3xl mt-16">Customize your <span class="text-blue-400">HP Probook</span> 450 G5 Core i5 8th Gen Business Series Laptop</h1>
+                        <p class="mt-4"><small>Intel® Core™ i5-8250U Processor (6M Cache,1.60 GHz GHz up to 3.40 GHz, 4 Cores, 8 Threads)4GB DDR4-2400 MHz SDRAM1TB SATA HD 15.6" diagonal anti-glare flat LED backlit, 220 cd/m2, 45% sRGB (768 x 1366 Finger Print Security
+                        Intel® HD Graphics 620
+                         Webcam, Gigabit Lan, Bluetooth, WiFi, Card Reader, 
+                        HP 3-cell, 48 Wh Long Life Li-ion 
+                        M.2 Slot, VGA Slot
+                        Extra RAM Slot</small></p>
+                    </div>
+                    <!-- Memory Button div  -->
+                    <div class=" mt-10">
+                        <h1 class="font-bold mb-3">Memory</h1>
+                        <button id="memory-btn1" class="border-2 p-2 rounded hover:bg-gray-300 border-blue-400">4GB unified memory</button>
+                        <button id="memory-btn2" class="border-2 p-2 rounded  hover:bg-gray-300 border-blue-400">8GB unified memory</button>
+                    </div>
+                    <!-- Storage Button div  -->
+                    <div class=" mt-10">
+                        <h1 class="font-bold mb-3">Storage</h1>
+                        <button id="storage-btn1" class="border-2 p-2 rounded hover:bg-gray-300 border-blue-400">256GB SSD storage</button>
+                        <button id="storage-btn2" class="border-2 p-2 rounded  hover:bg-gray-300 border-blue-400">512GB SSD storage</button>
+                        <button id="storage-btn3" class="border-2 p-2 rounded  hover:bg-gray-300 border-blue-400">1TB SSD storage</button>
+                    </div>
+                    <!-- Delivery button div -->
+                    <div class=" mt-10">
+                        <h1 class="font-bold mb-3">Choose your delivery option</h1>
+                        <button id="delivery-btn1" class="border-2 p-2 rounded hover:bg-gray-300 border-blue-400">Friday,Aug 25 FREE Prime Delivery</button>
+                        <button id="delivery-btn2" class="border-2 p-2 rounded  hover:bg-gray-300 border-blue-400">Mon,Aug 21 Delivery Charge $20 </button>
+                    </div>
+                    <!-- Product List div -->
+                    <div class=" grid grid-cols-2 font-bold mt-12 p-2">
+                        <div class="divide-y divide-light-blue-400 ">
+                            <h5 class="pb-3 pt-2">Best Price</h5>
+                            <h5 class="pb-3 pt-2">Extra Memory Cost</h5>
+                            <h5 class="pb-3 pt-2">Extra Storage</h5>
+                            <h5 class="pb-3 pt-2 ">Delivery charge</h5>
+                            <h5 class="pb-3 pt-2 border-blue-400 ">Total Price</h5>
+                        </div>
+                        <!-- price section -->
+                        <div class="divide-y divide-light-blue-100 w-16">
+                            <h5 class="pb-3 pt-2"> $ <span id="default-amount">1299</span></h5>
+                            <h5 class="pb-3 pt-2"> $<span id="extra-memory-amount">0</span></h5>
+                            <h5 class="pb-3 pt-2"> $<span id="extra-storage-amount">0</span></h5>
+                            <h5 class="pb-3 pt-2"> $<span id="delivery-charge-amount">0</span></h5>
+                            <h5 class="pb-3 pt-2 border-blue-400 "> $<span id="total-amount">1299</span></h5>
+                        </div>
+                    </div>
+                    <!-- Promo Code -->
+                    <div>
+
+                        <input class="border-blue-400 rounded border-2 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent ... py-1 px-10" id="promo-input-form" placeholder="Promo Code">
+                        <button class="bg-blue-400 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 ... rounded w-20 font-bold tracking-wider text-white py-2 ml-1" id="apply-btn">
+                              Apply
+                            </button>
+
+                    </div>
+
+                </div>
+        </section>
+        <section>
+            <!-- Discount Total Update section -->
+            <div class="mt-10">
+                <hr class="border-blue-400">
+                <h1 class="text-4xl text-center mt-3">Total: $<span id="discount-amount">1299</span></h1>
+            </div>
+        </section>
+    </main>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
